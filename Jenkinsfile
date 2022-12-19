@@ -8,7 +8,7 @@ pipeline{
         }
         stage('docker image build'){
             steps {
-                sh 'docker image build -t vamsibakka/saleor-dashboard:DEV'
+                sh 'docker image build -t vamsibakka/saleor-dashboard:DEV .'
             }
 
         }
