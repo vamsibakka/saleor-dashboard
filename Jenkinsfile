@@ -17,6 +17,7 @@ pipeline{
         }
         stage('push image'){
             steps {
+                sh 'docker login'
                 sh 'docker image push vamsibakka/saleor-dashboard:DEV'
             }
         }
